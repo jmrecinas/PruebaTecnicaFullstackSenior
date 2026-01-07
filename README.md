@@ -1,4 +1,4 @@
-# 📦 Sistema de Gestión de Pedidos (Frontend)
+# 📦 Sistema de Gestión de Pedidos
 
 Solución Frontend para el Reto Técnico Fullstack Senior. Aplicación desarrollada con **React 18**, **Vite** y una arquitectura escalable basada en Features.
 
