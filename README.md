@@ -1,151 +1,131 @@
 # 📦 Sistema de Gestión de Pedidos (Fullstack Senior)
 
+<div align="center">
+
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean%20%2B%20CQRS-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
 
 > **Solución Integral al Reto Técnico.**
 > Una aplicación empresarial robusta diseñada bajo estrictos estándares de **Arquitectura Limpia**, **Seguridad (JWT)**, **Resiliencia** y **UX Moderna**.
 
-## 📸 Galería del Proyecto
+---
 
-### 🎨 Frontend (UI/UX)
-Diseño responsivo y amigable desarrollado con React y Tailwind CSS.
-Login
-![alt text](image.png)
+## 📖 Descripción General
 
-Validaciones Login
-![alt text](image-1.png)
+Este proyecto implementa una solución completa (**End-to-End**) para la gestión de pedidos, demostrando competencias avanzadas en el desarrollo de software moderno. El objetivo principal es desacoplar la lógica de negocio de la infraestructura mediante una arquitectura por capas, asegurando escalabilidad, mantenibilidad y testabilidad.
 
-Ingreso login 
-![alt text](image-2.png)
+### 🏗️ Arquitectura del Sistema
 
-Modal Inicio de Sesion exitoso 
-![alt text](image-3.png)
+La solución sigue una **Clean Architecture** estricta, utilizando el patrón **CQRS** (Command Query Responsibility Segregation) para separar las operaciones de lectura y escritura.
 
-Gestion de pedidos Modo Claro 
-![alt text](image-26.png)
+![Arquitectura del Sistema](image_967f63.jpg)
 
-Gestion de pedidos Modo Dark 
-![alt text](image-4.png)
- 
-Crear Nuevo Pedido modo oscuro  
-![alt text](image-16.png)
+| Capa | Responsabilidad | Tecnologías Clave |
+| :--- | :--- | :--- |
+| **Presentation** | Puntos de entrada (API REST) y manejo de excepciones global. | ASP.NET Core, Swagger, Rate Limiting |
+| **Application** | Casos de uso y orquestación. Desacoplamiento total. | **MediatR**, CQRS, DTOs |
+| **Domain** | Reglas de negocio, Entidades, Enums y Value Objects. | **DDD** (Rich Domain Model) |
+| **Infrastructure** | Persistencia, servicios externos y adaptadores. | **EF Core** (Write), **Dapper** (Read), Polly |
 
-Crear Nuevo pedido modo oscuro con validaciones
-![alt text](image-17.png)
+---
 
-Pruebas de Buscar pedido por cliente 
-![alt text](image-5.png)
-
-Buscar por Filtros
-![alt text](image-6.png)
-
-Crear nuevo pedido modo claro 
-![alt text](image-7.png)
-
-Crear nuevo pedido con validaciones 
-![alt text](image-8.png)
-
-Crear pedido con un ID existente 
-![alt text](image-23.png)
-
-Agregar datos para crear nuevo pedido 
-![alt text](image-9.png)
-
-Pedido creado exitosamente 
-![alt text](image-10.png)
-
-Editar pedido 
-![alt text](image-11.png)
-
-Pedido actualizado exitosamente 
-![alt text](image-12.png)
-
-Eliminar un pedido 
-![alt text](image-13.png)
-
-Confirmacion de pedido eliminado correctamente 
-![alt text](image-14.png)
-
-Exportacion de pedidos a excel 
-![alt text](image-15.png)
-
-### ⚙️ Backend & API
-Documentación interactiva y estructura de base de datos.
-BACKEND API SWAGGER
-Servicios
-![alt text](image-18.png)
-
-Servicio de Auth login 
-![alt text](image-19.png)
-
-Confirmacion de JWT Token 
-![alt text](image-20.png)
-
-Autorizacion Bearer JWT TOKEN 
-![alt text](image-21.png)
-
-Obtener todos los pedidos 
-![alt text](image-22.png)
-
-Crear pedido exitosamente
-![alt text](image-27.png)
-![alt text](image-28.png)
-
-Crear pedido con id existente 
-![alt text](image-24.png)
-
-Buscar pedido por ID 
-![alt text](image-29.png)
-
-Actualizar pedido 
-![alt text](image-30.png)
-
-Eliminar pedido exitosamente 
-![alt text](image-31.png)
-
-Base de datos Postgres Tabla pedidos 
-![alt text](image-25.png)
-
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![React](https://img.shields.io/badge/React-18.2-blue)
-![Vite](https://img.shields.io/badge/Vite-5.0-purple)
-
-## 🏗️ Arquitectura y Stack Tecnológico
-
-El proyecto está desacoplado en dos capas principales:
-
-### 🔙 Backend (.NET 8)
-Diseñado siguiendo **Clean Architecture** y **CQRS** para garantizar escalabilidad.
-
-* **Core:**
-    * **Domain:** Entidades ricas, Value Objects (`Money`), Enums y Reglas de Negocio puras.
-    * **Application:** Patrón **CQRS** con **MediatR**. Manejo de casos de uso desacoplados.
-* **Infrastructure:**
-    * **Persistencia Híbrida:** **EF Core** para comandos (Escritura segura) y **Dapper** para consultas (Lectura rápida).
-    * **Resiliencia:** Implementación de **Circuit Breaker** y **Retry Policies** con **Polly**.
-* **Presentation (API):**
-    * **Rate Limiting:** Protección nativa contra abuso de API.
-    * **Seguridad:** Autenticación JWT Bearer y Hash de contraseñas.
-    * **Middleware:** Manejo global de excepciones personalizado.
+## 📸 Galería y Funcionalidades
 
 ### 🎨 Frontend (React + Vite)
-Arquitectura modular basada en **Vertical Slices (Features)**.
+Interfaz moderna construida con **Tailwind CSS**, implementando una arquitectura basada en **Features** (Vertical Slices).
 
-* **Gestión de Estado Servidor:** **TanStack Query v5** (Caching, Optimistic Updates).
-* **Seguridad:** Interceptores Axios para inyección de Token y manejo de 401 (Auto-logout).
-* **Calidad de Código:** Validaciones con Esquemas, Error Boundaries y Componentes Atómicos.
-* **Estilos:** Tailwind CSS con diseño *Mobile First*.
+<details>
+<summary><strong>👁️ Ver Capturas del Dashboard y Gestión (Clic aquí)</strong></summary>
+
+| Dashboard (Dark/Light) | Gestión de Pedidos |
+|:---:|:---:|
+| ![Dashboard Dark](image-4.png) | ![Tabla Pedidos](image-26.png) |
+| *Modo oscuro nativo y métricas* | *Listado paginado y filtrable* |
+
+| Creación de Pedidos | Feedback Visual |
+|:---:|:---:|
+| ![Crear Pedido](image-16.png) | ![Validaciones](image-17.png) |
+| *Formularios reactivos* | *Validación de esquemas (Zod/Yup)* |
+
+| Filtros Avanzados | Exportación |
+|:---:|:---:|
+| ![Filtros](image-6.png) | ![Exportar Excel](image-15.png) |
+| *Búsqueda en tiempo real* | *Reportes descargables* |
+
+</details>
+
+<details>
+<summary><strong>🔐 Ver Capturas de Autenticación (Clic aquí)</strong></summary>
+
+| Login Seguro | Validaciones |
+|:---:|:---:|
+| ![Login](image.png) | ![Error Login](image-1.png) |
+| *Autenticación JWT* | *Manejo de errores visual* |
+
+</details>
+
+### ⚙️ Backend (API RESTful)
+Documentación interactiva con Swagger y estructura de base de datos relacional.
+
+<details>
+<summary><strong>📡 Ver Capturas de la API y Base de Datos (Clic aquí)</strong></summary>
+
+| Swagger Documentation | Auth & Seguridad |
+|:---:|:---:|
+| ![Swagger](image-18.png) | ![JWT Token](image-20.png) |
+| *Documentación OpenAPI* | *Bearer Token Flow* |
+
+| Endpoints CRUD | Persistencia |
+|:---:|:---:|
+| ![Endpoints](image-22.png) | ![Postgres Table](image-25.png) |
+| *Operaciones REST completas* | *Esquema en PostgreSQL* |
+
+</details>
+
+---
+
+## 🚀 Características Técnicas Destacadas
+
+### Backend (.NET 8)
+* ✅ **CQRS con MediatR:** Separación clara entre Comandos (Modifican estado) y Queries (Leen estado).
+* ✅ **Persistencia Híbrida:** * **EF Core:** Para escritura segura y manejo de transacciones (`UnitOfWork`).
+    * **Dapper:** Para consultas de lectura de alto rendimiento (Micro-ORM).
+* ✅ **Resiliencia:** Implementación de **Circuit Breaker** y **Retry Policies** con **Polly**.
+* ✅ **Seguridad:** Autenticación JWT y Hash de contraseñas.
+* ✅ **Rate Limiting:** Protección nativa contra abuso de API.
+
+### Frontend (React 18)
+* ✅ **Gestión de Estado Servidor:** Uso de **TanStack Query v5** para caching y actualizaciones optimistas.
+* ✅ **Arquitectura Modular:** Estructura de carpetas basada en funcionalidades (`features/auth`, `features/pedidos`) en lugar de tipos técnicos.
+* ✅ **Seguridad:** Interceptores Axios para inyección automática de tokens y manejo de errores 401 (Auto-logout).
+* ✅ **UI/UX:** Diseño responsivo *Mobile-First* con Feedback inmediato (Toasts, Loaders).
 
 ---
 
 ## 📂 Estructura del Proyecto
 
-### Backend Structure
 ```text
+<<<<<<< HEAD
+/
+├── 📂 Backend/
+│   ├── 📂 src/
+│   │   ├── 📂 01. Presentation/ (API, Middleware, Config)
+│   │   ├── 📂 02. Core/         (Domain Entities, CQRS Handlers, Interfaces)
+│   │   └── 📂 03. Infrastructure/ (EF Core, Dapper Repositories, Services)
+│
+├── 📂 Frontend/
+│   ├── 📂 src/
+│   │   ├── 📂 config/       # Configuración global (Axios)
+│   │   ├── 📂 features/     # Módulos funcionales (Auth, Pedidos)
+│   │   ├── 📂 core/         # Hooks y servicios base
+│   │   ├── 📂 shared/       # Componentes UI reutilizables
+│   │   └── 📂 routes/       # Guards y Router
+=======
 src/
 ├── 01. Presentation/
 │   └── JRecinas.Acity.API/       # Controladores, Middleware, Program.cs
@@ -225,3 +205,4 @@ Email: admin@jrecinas.acity
 Password: Admin123!
 👤 Autor
 JRecinas - Desarrollador Fullstack Senior .NET / React
+>>>>>>> 8046a95eb93f5271c64c557dcc520f143972daa4
