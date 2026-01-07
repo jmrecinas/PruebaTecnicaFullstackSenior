@@ -39,8 +39,8 @@ La solución sigue una **Clean Architecture** estricta, utilizando el patrón **
 ### 🎨 Frontend (React + Vite)
 Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrones de UX avanzados como *Optimistic UI*, *Feedback inmediato* y validaciones en tiempo real.
 
-<details>
-<summary><strong>🔐 Módulo de Autenticación (Clic para expandir)</strong></summary>
+<details open>
+<summary><strong>🔐 Módulo de Autenticación (Clic para contraer)</strong></summary>
 <br>
 
 | Landing & Login | Validaciones de Seguridad |
@@ -55,8 +55,8 @@ Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrone
 
 </details>
 
-<details open>
-<summary><strong>📊 Dashboard y Gestión de Pedidos (Clic para contraer)</strong></summary>
+<details>
+<summary><strong>📊 Dashboard y Gestión de Pedidos (Clic para expandir)</strong></summary>
 <br>
 
 | Vista Principal (Light Mode) | Filtros Avanzados |
@@ -69,34 +69,18 @@ Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrone
 | ![Búsqueda Live](image_cd9315.png) | ![Dashboard Dark](image_cd92b7.png) |
 | *Búsqueda con Debounce por cliente/ID* | *Soporte nativo para temas oscuros* |
 
-| Exportación de Datos | Feedback de Acción |
-|:---:|:---:|
-| ![Exportar Excel](image_cdf0ee.png) | ![Toast Update](image_cdf0a8.png) |
-| *Generación de reportes Excel (.xlsx)* | *Confirmación visual de actualizaciones* |
-
 </details>
 
 <details>
-<summary><strong>📝 Operaciones CRUD (Crear, Editar, Eliminar)</strong></summary>
+<summary><strong>📝 Creación y Edición de Pedidos (Clic para expandir)</strong></summary>
 <br>
 
-| Nuevo Pedido (Validación) | Detección de Duplicados |
+| Modal de Creación | Validaciones de Formulario |
 |:---:|:---:|
-| ![Validación Form](image_cded28.png) | ![Error Duplicado](image_cded47.png) |
-| *Validación de campos obligatorios* | *Control de unicidad de ID en Backend* |
-
-| Flujo de Creación Exitoso | Edición de Registros |
-|:---:|:---:|
-| ![Crear Success](image_cdedc4.png) | ![Editar Pedido](image_cdede2.png) |
-| *Confirmación inmediata tras guardar* | *Carga de datos existentes para edición* |
-
-| Eliminación Segura | Confirmación de Borrado |
-|:---:|:---:|
-| ![Modal Eliminar](image_cdf0b0.png) | ![Toast Eliminar](image_cdf0cd.png) |
-| *Modal de confirmación para acciones destructivas* | *Feedback tras eliminación lógica (Soft Delete)* |
+| ![Modal Crear](image_cd92d6.png) | ![Errores Formulario](image_cd92f5.png) |
+| *Interfaz modal limpia y centrada* | *Validación estricta de reglas de negocio* |
 
 </details>
-
 ### ⚙️ Backend (API RESTful & Swagger)
 Documentación interactiva bajo estándar **OpenAPI 3.0**. La API implementa patrones de diseño robustos como *Response Wrappers* y *Global Exception Handling*.
 
