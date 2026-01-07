@@ -9,6 +9,7 @@ Solución Frontend para el Reto Técnico Fullstack Senior. Aplicación desarroll
 ![alt text](image-2.png)
 
 ![alt text](image-3.png)
+![alt text](image-17.png)
 
 ![alt text](image-16.png)
 
