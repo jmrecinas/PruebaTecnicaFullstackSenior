@@ -2,6 +2,8 @@
 
 Solución Frontend para el Reto Técnico Fullstack Senior. Aplicación desarrollada con **React 18**, **Vite** y una arquitectura escalable basada en Features.
 
+![alt text](image.png)
+
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![React](https://img.shields.io/badge/React-18.2-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.0-purple)
