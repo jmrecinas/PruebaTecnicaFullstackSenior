@@ -37,50 +37,56 @@ La solución sigue una **Clean Architecture** estricta, utilizando el patrón **
 ## 📸 Galería y Funcionalidades
 
 ### 🎨 Frontend (React + Vite)
-Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrones de UX avanzados como *Optimistic UI*, *Feedback inmediato* y validaciones en tiempo real.
+Interfaz moderna construida con **Tailwind CSS**, implementando una arquitectura basada en **Features** (Vertical Slices).
 
-<details open>
-<summary><strong>🔐 Módulo de Autenticación (Clic para contraer)</strong></summary>
-<br>
+<details>
+<summary><strong>👁️ Ver Capturas del Dashboard y Gestión (Clic aquí)</strong></summary>
 
-| Landing & Login | Validaciones de Seguridad |
+| Dashboard (Dark/Light) | Gestión de Pedidos |
 |:---:|:---:|
-| ![Login Screen](image_cd8ef4.jpg) | ![Validaciones](image_cd8f73.png) |
-| *Diseño inmersivo con validación de credenciales* | *Feedback visual de errores (Yup/Zod)* |
+| ![Dashboard Dark](image-4.png) | ![Tabla Pedidos](image-26.png) |
+| *Modo oscuro nativo y métricas* | *Listado paginado y filtrable* |
 
-| Interacción de Usuario | Acceso Exitoso |
+| Creación de Pedidos | Feedback Visual |
 |:---:|:---:|
-| ![Formulario Login](image_cd8fc9.png) | ![Toast Success](image_cd8fe7.png) |
-| *Formularios controlados y accesibles* | *Notificaciones Toast no intrusivas* |
+| ![Crear Pedido](image-16.png) | ![Validaciones](image-17.png) |
+| *Formularios reactivos* | *Validación de esquemas (Zod/Yup)* |
+
+| Filtros Avanzados | Exportación |
+|:---:|:---:|
+| ![Filtros](image-6.png) | ![Exportar Excel](image-15.png) |
+| *Búsqueda en tiempo real* | *Reportes descargables* |
 
 </details>
 
 <details>
-<summary><strong>📊 Dashboard y Gestión de Pedidos (Clic para expandir)</strong></summary>
-<br>
+<summary><strong>🔐 Ver Capturas de Autenticación (Clic aquí)</strong></summary>
 
-| Vista Principal (Light Mode) | Filtros Avanzados |
+| Login Seguro | Validaciones |
 |:---:|:---:|
-| ![Dashboard Light](image_cd9007.png) | ![Filtros Estado](image_cd936f.png) |
-| *KPIs en tiempo real y tabla paginada* | *Filtrado por estado múltiple* |
-
-| Búsqueda en Tiempo Real | Modo Oscuro (Dark Mode) |
-|:---:|:---:|
-| ![Búsqueda Live](image_cd9315.png) | ![Dashboard Dark](image_cd92b7.png) |
-| *Búsqueda con Debounce por cliente/ID* | *Soporte nativo para temas oscuros* |
+| ![Login](image.png) | ![Error Login](image-1.png) |
+| *Autenticación JWT* | *Manejo de errores visual* |
 
 </details>
+
+### ⚙️ Backend (API RESTful)
+Documentación interactiva con Swagger y estructura de base de datos relacional.
 
 <details>
-<summary><strong>📝 Creación y Edición de Pedidos (Clic para expandir)</strong></summary>
-<br>
+<summary><strong>📡 Ver Capturas de la API y Base de Datos (Clic aquí)</strong></summary>
 
-| Modal de Creación | Validaciones de Formulario |
+| Swagger Documentation | Auth & Seguridad |
 |:---:|:---:|
-| ![Modal Crear](image_cd92d6.png) | ![Errores Formulario](image_cd92f5.png) |
-| *Interfaz modal limpia y centrada* | *Validación estricta de reglas de negocio* |
+| ![Swagger](image-18.png) | ![JWT Token](image-20.png) |
+| *Documentación OpenAPI* | *Bearer Token Flow* |
+
+| Endpoints CRUD | Persistencia |
+|:---:|:---:|
+| ![Endpoints](image-22.png) | ![Postgres Table](image-25.png) |
+| *Operaciones REST completas* | *Esquema en PostgreSQL* |
 
 </details>
+
 ### ⚙️ Backend (API RESTful & Swagger)
 Documentación interactiva bajo estándar **OpenAPI 3.0**. La API implementa patrones de diseño robustos como *Response Wrappers* y *Global Exception Handling*.
 
