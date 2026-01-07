@@ -97,17 +97,6 @@ Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrone
 
 </details>
 
-<details>
-<summary><strong>📝 Creación y Edición de Pedidos (Clic para expandir)</strong></summary>
-<br>
-
-| Modal de Creación | Validaciones de Formulario |
-|:---:|:---:|
-| ![Modal Crear](image_cd92d6.png) | ![Errores Formulario](image_cd92f5.png) |
-| *Interfaz modal limpia y centrada* | *Validación estricta de reglas de negocio* |
-
-</details>
-
 ### ⚙️ Backend (API RESTful & Swagger)
 Documentación interactiva bajo estándar **OpenAPI 3.0**. La API implementa patrones de diseño robustos como *Response Wrappers* y *Global Exception Handling*.
 
