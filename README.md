@@ -37,53 +37,114 @@ La solución sigue una **Clean Architecture** estricta, utilizando el patrón **
 ## 📸 Galería y Funcionalidades
 
 ### 🎨 Frontend (React + Vite)
-Interfaz moderna construida con **Tailwind CSS**, implementando una arquitectura basada en **Features** (Vertical Slices).
+Interfaz moderna y responsiva diseñada con **Tailwind CSS**. Implementa patrones de UX avanzados como *Optimistic UI*, *Feedback inmediato* y validaciones en tiempo real.
 
 <details>
-<summary><strong>👁️ Ver Capturas del Dashboard y Gestión (Clic aquí)</strong></summary>
+<summary><strong>🔐 Módulo de Autenticación (Clic para expandir)</strong></summary>
+<br>
 
-| Dashboard (Dark/Light) | Gestión de Pedidos |
+| Landing & Login | Validaciones de Seguridad |
 |:---:|:---:|
-| ![Dashboard Dark](image-4.png) | ![Tabla Pedidos](image-26.png) |
-| *Modo oscuro nativo y métricas* | *Listado paginado y filtrable* |
+| ![Login Screen](image_cd8ef4.jpg) | ![Validaciones](image_cd8f73.png) |
+| *Diseño inmersivo con validación de credenciales* | *Feedback visual de errores (Yup/Zod)* |
 
-| Creación de Pedidos | Feedback Visual |
+| Interacción de Usuario | Acceso Exitoso |
 |:---:|:---:|
-| ![Crear Pedido](image-16.png) | ![Validaciones](image-17.png) |
-| *Formularios reactivos* | *Validación de esquemas (Zod/Yup)* |
+| ![Formulario Login](image_cd8fc9.png) | ![Toast Success](image_cd8fe7.png) |
+| *Formularios controlados y accesibles* | *Notificaciones Toast no intrusivas* |
 
-| Filtros Avanzados | Exportación |
+</details>
+
+<details open>
+<summary><strong>📊 Dashboard y Gestión de Pedidos (Clic para contraer)</strong></summary>
+<br>
+
+| Vista Principal (Light Mode) | Filtros Avanzados |
 |:---:|:---:|
-| ![Filtros](image-6.png) | ![Exportar Excel](image-15.png) |
-| *Búsqueda en tiempo real* | *Reportes descargables* |
+| ![Dashboard Light](image_cd9007.png) | ![Filtros Estado](image_cd936f.png) |
+| *KPIs en tiempo real y tabla paginada* | *Filtrado por estado múltiple* |
+
+| Búsqueda en Tiempo Real | Modo Oscuro (Dark Mode) |
+|:---:|:---:|
+| ![Búsqueda Live](image_cd9315.png) | ![Dashboard Dark](image_cd92b7.png) |
+| *Búsqueda con Debounce por cliente/ID* | *Soporte nativo para temas oscuros* |
+
+| Exportación de Datos | Feedback de Acción |
+|:---:|:---:|
+| ![Exportar Excel](image_cdf0ee.png) | ![Toast Update](image_cdf0a8.png) |
+| *Generación de reportes Excel (.xlsx)* | *Confirmación visual de actualizaciones* |
 
 </details>
 
 <details>
-<summary><strong>🔐 Ver Capturas de Autenticación (Clic aquí)</strong></summary>
+<summary><strong>📝 Operaciones CRUD (Crear, Editar, Eliminar)</strong></summary>
+<br>
 
-| Login Seguro | Validaciones |
+| Nuevo Pedido (Validación) | Detección de Duplicados |
 |:---:|:---:|
-| ![Login](image.png) | ![Error Login](image-1.png) |
-| *Autenticación JWT* | *Manejo de errores visual* |
+| ![Validación Form](image_cded28.png) | ![Error Duplicado](image_cded47.png) |
+| *Validación de campos obligatorios* | *Control de unicidad de ID en Backend* |
+
+| Flujo de Creación Exitoso | Edición de Registros |
+|:---:|:---:|
+| ![Crear Success](image_cdedc4.png) | ![Editar Pedido](image_cdede2.png) |
+| *Confirmación inmediata tras guardar* | *Carga de datos existentes para edición* |
+
+| Eliminación Segura | Confirmación de Borrado |
+|:---:|:---:|
+| ![Modal Eliminar](image_cdf0b0.png) | ![Toast Eliminar](image_cdf0cd.png) |
+| *Modal de confirmación para acciones destructivas* | *Feedback tras eliminación lógica (Soft Delete)* |
 
 </details>
 
-### ⚙️ Backend (API RESTful)
-Documentación interactiva con Swagger y estructura de base de datos relacional.
+<details>
+<summary><strong>📝 Creación y Edición de Pedidos (Clic para expandir)</strong></summary>
+<br>
+
+| Modal de Creación | Validaciones de Formulario |
+|:---:|:---:|
+| ![Modal Crear](image_cd92d6.png) | ![Errores Formulario](image_cd92f5.png) |
+| *Interfaz modal limpia y centrada* | *Validación estricta de reglas de negocio* |
+
+</details>
+
+### ⚙️ Backend (API RESTful & Swagger)
+Documentación interactiva bajo estándar **OpenAPI 3.0**. La API implementa patrones de diseño robustos como *Response Wrappers* y *Global Exception Handling*.
+
+<details open>
+<summary><strong>📡 Documentación y Seguridad (Clic para contraer)</strong></summary>
+<br>
+
+| Servicios Disponibles | Seguridad (Bearer) |
+|:---:|:---:|
+| ![Swagger Home](image-18.png) | ![Authorize Modal](image-21.png) |
+| *Vista general de Endpoints (Swagger UI)* | *Esquema de seguridad JWT Bearer* |
+
+| Flujo de Autenticación | Respuesta de Token |
+|:---:|:---:|
+| ![Login Request](image-19.png) | ![JWT Response](image-20.png) |
+| *Endpoint público de Login* | *Generación de Token con expiración* |
+
+</details>
 
 <details>
-<summary><strong>📡 Ver Capturas de la API y Base de Datos (Clic aquí)</strong></summary>
+<summary><strong>🚀 Endpoints y Operaciones (Clic para expandir)</strong></summary>
+<br>
 
-| Swagger Documentation | Auth & Seguridad |
+| Listado de Pedidos (Query) | Búsqueda por ID |
 |:---:|:---:|
-| ![Swagger](image-18.png) | ![JWT Token](image-20.png) |
-| *Documentación OpenAPI* | *Bearer Token Flow* |
+| ![Get All](image-22.png) | ![Get By ID](image-29.png) |
+| *Consulta optimizada (posiblemente Dapper)* | *Recuperación de detalle único* |
 
-| Endpoints CRUD | Persistencia |
+| Creación de Recurso | Respuesta Estandarizada |
 |:---:|:---:|
-| ![Endpoints](image-22.png) | ![Postgres Table](image-25.png) |
-| *Operaciones REST completas* | *Esquema en PostgreSQL* |
+| ![Create Request](image-27.png) | ![Create Success](image-28.png) |
+| *DTO de entrada validado* | *Wrapper `BaseResponse<T>` (Clean Architecture)* |
+
+| Manejo de Errores | Actualización (Command) |
+|:---:|:---:|
+| ![Error Duplicado](image-24.png) | ![Update Request](image-32.png) |
+| *Middleware capturando reglas de negocio* | *Modificación segura de recursos* |
 
 </details>
 
@@ -146,63 +207,60 @@ src/
 ├── shared/       # Componentes UI reutilizables y utilidades
 └── assets/       # Estilos globales y recursos estáticos
 
-⚙️ Guía de Instalación y Ejecución
-Prerrequisitos
-.NET 8 SDK
+## ⚙️ Guía de Instalación y Despliegue
 
-Node.js (v18+)
+### Prerrequisitos
+* [.NET 8 SDK](https://dotnet.microsoft.com/download)
+* [Node.js](https://nodejs.org/) (v18+)
+* [PostgreSQL](https://www.postgresql.org/) (Local )
 
-PostgreSQL (Instancia local o Docker)
+### 1️⃣ Configuración del Backend
 
-Paso 1: Configuración del Backend
-Navega a la carpeta de la API:
+1.  Navega a la carpeta de la API:
+    ```bash
+    cd Backend/src/01.Presentation/JRecinas.Acity.API
+    ```
+2.  Configura tu cadena de conexión en `appsettings.json`:
+    ```json
+    "ConnectionStrings": {
+      "DefaultConnection": "Host=localhost;Port=5432;Database=JRecinasAcityDb;Username=postgres;Password=tu_password"
+    }
+    ```
+3.  Ejecuta la aplicación (**El Seeder creará la BD y datos automáticamente**):
+    ```bash
+    dotnet run
+    ```
+    *API disponible en: `https://localhost:7275`*
 
-Bash
+### 2️⃣ Configuración del Frontend
 
-cd Backend/src/01.Presentation/JRecinas.Acity.API
-Configura tu cadena de conexión en appsettings.json:
+1.  Navega a la carpeta del cliente:
+    ```bash
+    cd Frontend
+    ```
+2.  Instala las dependencias e inicia:
+    ```bash
+    npm install
+    npm run dev
+    ```
+3.  Configura las variables de entorno en `.env`:
+    ```env
+    VITE_API_BASE_URL=https://localhost:7275/api
+    ```
 
-JSON
+---
 
-"ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=JRecinasAcityDb;Username=postgres;Password=tu_password"
-}
-Ejecuta la aplicación (El Seeder creará la BD y datos automáticamente):
+## 🧪 Credenciales de Prueba (Data Seeder)
 
-Bash
+El backend incluye un **Data Seeder** que precarga un usuario administrador y pedidos de ejemplo al iniciar la aplicación por primera vez.
 
-dotnet run
-API disponible en: https://localhost:7275 (o el puerto configurado).
+| Rol | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@jrecinas.acity` | `Admin123!` |
 
-Paso 2: Configuración del Frontend
-Navega a la carpeta del cliente:
+---
 
-Bash
+## 👤 Autor
 
-cd Frontend
-Instala las dependencias:
-
-Bash
-
-npm install
-Configura las variables de entorno en .env:
-
-Fragmento de código
-
-VITE_API_BASE_URL=https://localhost:7275/api
-Inicia el servidor de desarrollo:
-
-Bash
-
-npm run dev
-App disponible en: http://localhost:5173
-
-🧪 Credenciales de Prueba (Data Seeder)
-El backend incluye un Data Seeder que precarga un usuario administrador y pedidos de ejemplo al iniciar la aplicación por primera vez.
-
-Email: admin@jrecinas.acity
-
-Password: Admin123!
-👤 Autor
-JRecinas - Desarrollador Fullstack Senior .NET / React
- 
+**JRecinas**
+*Desarrollador Fullstack Senior .NET / React*
