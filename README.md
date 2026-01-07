@@ -88,7 +88,7 @@ Interfaz moderna construida con **Tailwind CSS**, implementando una arquitectura
 
 | Edición de Pedido | Eliminación Segura |
 |:---:|:---:|
-| ![Edit](image-30.png) | ![Delete Modal](image-13.png) |
+| ![Edit](image-33.png) | ![Delete Modal](image-13.png) |
 | *Carga de datos existentes* | *Modal de confirmación (Soft Delete)* |
 
 </details>
