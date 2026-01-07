@@ -4,6 +4,39 @@ Solución Frontend para el Reto Técnico Fullstack Senior. Aplicación desarroll
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-16.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+![alt text](image-9.png)
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+
+
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![React](https://img.shields.io/badge/React-18.2-blue)
 ![Vite](https://img.shields.io/badge/Vite-5.0-purple)
