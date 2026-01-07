@@ -67,25 +67,6 @@ Interfaz moderna construida con **Tailwind CSS**, implementando una arquitectura
 | ![Login](image.png) | ![Error Login](image-1.png) |
 | *Autenticación JWT* | *Manejo de errores visual* |
 
-</details>
-
-### ⚙️ Backend (API RESTful)
-Documentación interactiva con Swagger y estructura de base de datos relacional.
-
-<details>
-<summary><strong>📡 Ver Capturas de la API y Base de Datos (Clic aquí)</strong></summary>
-
-| Swagger Documentation | Auth & Seguridad |
-|:---:|:---:|
-| ![Swagger](image-18.png) | ![JWT Token](image-20.png) |
-| *Documentación OpenAPI* | *Bearer Token Flow* |
-
-| Endpoints CRUD | Persistencia |
-|:---:|:---:|
-| ![Endpoints](image-22.png) | ![Postgres Table](image-25.png) |
-| *Operaciones REST completas* | *Esquema en PostgreSQL* |
-
-</details>
 
 ### ⚙️ Backend (API RESTful & Swagger)
 Documentación interactiva bajo estándar **OpenAPI 3.0**. La API implementa patrones de diseño robustos como *Response Wrappers* y *Global Exception Handling*.
