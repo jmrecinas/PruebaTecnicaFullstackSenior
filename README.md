@@ -223,3 +223,5 @@ El backend incluye un Data Seeder que precarga un usuario administrador y pedido
 Email: admin@jrecinas.acity
 
 Password: Admin123!
+👤 Autor
+JRecinas - Desarrollador Fullstack Senior .NET / React
