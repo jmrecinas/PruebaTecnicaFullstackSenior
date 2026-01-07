@@ -37,6 +37,27 @@ Solución Frontend para el Reto Técnico Fullstack Senior. Aplicación desarroll
 
 ![alt text](image-15.png)
 
+BACKEND
+
+![alt text](image-18.png)
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+Autorizacion
+![alt text](image-21.png)
+
+
+![alt text](image-22.png)
+
+
+![alt text](image-23.png)
+
+![alt text](image-24.png)
+
+Base de datos Postgres
+![alt text](image-25.png)
 
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![React](https://img.shields.io/badge/React-18.2-blue)
